@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-family: "Arima", sans-serif;
+    --primary-color: #992d2d;
+    --secondary-color: #4e1d6e;
+
+    --text-color-base: #181717;
+    --text-color-extra: #5a5555;
+
+    --bg-color: #ffffff;
+  }
+
+  .dark {
+    --font-family: "Arima", sans-serif;
+    --primary-color: #992d2d;
+    --secondary-color: #4e1d6e;
+
+    --text-color-base: #181717;
+    --text-color-extra: #5a5555;
+
+    --bg-color: #000000;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--text-color-base);
+  background-color: var(--bg-color);
+}
