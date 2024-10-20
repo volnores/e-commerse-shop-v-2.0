@@ -2,7 +2,7 @@ import React from "react";
 
 const DropDownMenu: React.FC = () => {
   return (
-    <div className="flex absolute top-20 ">
+    <div className="flex absolute top-20 z-10">
       <div className="mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y dark:bg-gray-800 dark:border-gray-600">
         <div className="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 dark:text-white sm:grid-cols-2 md:px-4">
           <ul>
