@@ -8,7 +8,7 @@ import support from "../../../../public/images/advantagesImages/support.jpg";
 const index: React.FC = () => {
   return (
     <div>
-      <ul className="flex justify-between px-16 py-8">
+      <ul className="flex justify-between px-16 md: mt-4 w-full xl: max-w-[1750px] mx-auto">
         <li className="flex flex-col justify-center items-center">
           <img src={delivery} alt="delivery" className="h-48" />
           <h1 className="text-md font-bold">Express delivery</h1>
