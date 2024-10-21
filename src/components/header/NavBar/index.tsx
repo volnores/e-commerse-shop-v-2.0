@@ -7,7 +7,7 @@ import Navigation from "../Elements/Navigation";
 const NavBar: React.FC = () => {
   return (
     <nav className=" bg-base">
-      <div className="flex justify-between items-center p-4">
+      <div className="flex justify-between items-center p-4 border-b-2 ">
         <Logo />
         <Navigation />
         <RightSide />
