@@ -3,6 +3,7 @@ import NavBar from "../components/header/NavBar";
 import Carousel from "../components/carousel/Carousel/index";
 import Advantages from "../components/advantages/Advantages";
 import ItemsSlider from "../components/slider/ItemsSlider/index";
+import GridCategories from "../components/categories/GridCategories/index";
 
 const Home: React.FC = () => {
   return (
@@ -11,6 +12,7 @@ const Home: React.FC = () => {
       <Carousel />
       <Advantages />
       <ItemsSlider />
+      <GridCategories />
     </div>
   );
 };
