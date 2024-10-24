@@ -1,6 +1,6 @@
 import { LeftOutlined, RightOutlined } from '@ant-design/icons';
 import React, { useRef } from 'react';
-import { Brands } from '../../fakeApi/Brands/Brands';
+import { Brands } from '../../../Brands/Brands';
 import { BrandsItems } from '../../../interfaces/brandsSlider';
 
 

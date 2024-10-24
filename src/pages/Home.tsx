@@ -6,6 +6,7 @@ import ItemsSlider from "../components/slider/ItemsSlider/index";
 import GridCategories from "../components/categories/GridCategories/index";
 import BrandsSlider from '../components/brandsSlider/BrandsSlider/index'
 import Footer from '../components/footer/Footer/index'
+import ItemsList from '../components/itemsList/ItemsList/index'
 
 const Home: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Home: React.FC = () => {
       <Advantages />
       <ItemsSlider />
       <GridCategories />
+<ItemsList/>
       <BrandsSlider/>
       <Footer/>
     </div>
