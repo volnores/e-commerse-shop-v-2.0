@@ -23,7 +23,7 @@ behavior: 'smooth'
   };
  
   return (
-    <div className='relative flex items-center'>
+    <div className='relative flex items-center mt-8'>
     <button onClick={RightScroll} className="absolute rounded-full left-14 px-4 py-3 bg-blue-100 hover:bg-indigo-200 bg-opacity-80 ">
         {<LeftOutlined />}
       </button>
@@ -32,7 +32,7 @@ behavior: 'smooth'
       </button>
     <div
       ref={refItem}
-      className="flex overflow-x-auto w-full md: mt-8 max-w-[1750px] mx-auto gap-2 no-scroll">
+      className="flex overflow-x-auto w-full md: max-w-[1750px] mx-auto gap-2 no-scroll">
       
       {Brands.map((item: BrandsItems) => (
         <img src={item.img} alt="img" className="max-h-48 rounded-sm" />
