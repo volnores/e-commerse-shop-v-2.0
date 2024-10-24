@@ -24,10 +24,10 @@ behavior: 'smooth'
  
   return (
     <div className='relative flex items-center mt-8'>
-    <button onClick={RightScroll} className="absolute rounded-full left-14 px-4 py-3 bg-blue-100 hover:bg-indigo-200 bg-opacity-80 ">
+    <button onClick={RightScroll} className="absolute flex rounded-full left-14 px-4 py-4 bg-blue-100 hover:bg-indigo-200 bg-opacity-80 ">
         {<LeftOutlined />}
       </button>
-      <button onClick={LeftScroll} className="absolute right-14 rounded-full  px-4 py-3 bg-blue-100 hover:bg-indigo-200 bg-opacity-80">
+      <button onClick={LeftScroll} className="absolute flex right-14 rounded-full  px-4 py-4 bg-blue-100 hover:bg-indigo-200 bg-opacity-80">
         {<RightOutlined />}
       </button>
     <div
