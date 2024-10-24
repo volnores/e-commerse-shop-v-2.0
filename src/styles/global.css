@@ -36,3 +36,9 @@ body {
   color: var(--text-color-base);
   background-color: var(--bg-color);
 }
+
+@layer utilities {
+  .no-scroll::-webkit-scrollbar {
+    display: none;
+  }
+}
