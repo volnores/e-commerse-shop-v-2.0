@@ -11,7 +11,9 @@ const index: React.FC = () => {
     if(error) return <h1>{error}</h1>
    
   return (
-    <div className='grid grid-cols-6 place-items-center md: mt-4 w-full max-w-[1750px] mx-auto border-2'>{data?.products.map((item) => <ProductItem key={item.id} {...item}/>)}</div>
+    <div className='grid grid-cols-6 gap-2 place-items-center md: mt-8 w-full max-w-[1750px] mx-auto '>
+      {data?.products.map((item) => <ProductItem key={item.id} {...item}/>)}
+      </div>
   )
 }
 
