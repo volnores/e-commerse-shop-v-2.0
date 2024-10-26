@@ -34,8 +34,8 @@ behavior: 'smooth'
       ref={refItem}
       className="flex overflow-x-auto w-full md: max-w-[1750px] mx-auto gap-2 no-scroll">
       
-      {Brands.map((item: BrandsItems) => (
-        <img src={item.img} alt="img" className="max-h-48 rounded-sm" />
+      {Brands.map((item: BrandsItems, i) => (
+        <img key={i} src={item.img} alt="img" className="max-h-48 rounded-sm" />
       ))}
    </div>
     </div>

@@ -6,6 +6,8 @@ import { SearchOutlined } from '@ant-design/icons'
 const index = ({...item}: ProductItem) => {
     const { price, image, model, discount} = item
 
+    
+
   return (
     <div className='border-2 px-4 py-2 rounded-sm bg-gray-50 relative'>
       <img src={image} alt="img" className='h-64 w-64 rounded-sm gap-6 mt-4 cursor-pointer'/>
