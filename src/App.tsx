@@ -1,16 +1,16 @@
-import { Route, Routes } from "react-router-dom";
-import { route } from "./route/route";
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/AppRouter";
+
+
+
 
 function App() {
   return (
     <>
-      <Routes>
-        {route.map((item, i) => (
-          <Route key={i} path={item.path} element={<item.element />} />
-        ))}
-      </Routes>
+     <RouterProvider router={router}/>
     </>
   );
 }
 
 export default App;
+
