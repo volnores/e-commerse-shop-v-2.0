@@ -1,9 +1,9 @@
-import React from "react";
+import React from 'react';
 
-import delivery from "../../../../public/images/advantagesImages/delivery.jpg";
-import loyalty from "../../../../public/images/advantagesImages/loyalty.jpg";
-import pay from "../../../../public/images/advantagesImages/pay.jpg";
-import support from "../../../../public/images/advantagesImages/support.jpg";
+import delivery from '../../../../public/images/advantagesImages/delivery.jpg';
+import loyalty from '../../../../public/images/advantagesImages/loyalty.jpg';
+import pay from '../../../../public/images/advantagesImages/pay.jpg';
+import support from '../../../../public/images/advantagesImages/support.jpg';
 
 const index: React.FC = () => {
   return (

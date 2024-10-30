@@ -1,8 +1,8 @@
-import React from "react";
+import React from 'react';
 
-import logo from "../../../../public/images/headerImages/logo.png";
+import logo from '../../../../public/images/headerImages/logo.png';
 
-const Logo: React.FC = ({navigate}) => {
+const Logo: React.FC = ({ navigate }) => {
   return (
     <>
       <img onClick={() => navigate('/')} src={logo} alt="logo" className="h-12 cursor-pointer" />

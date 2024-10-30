@@ -1,3 +1,3 @@
 export interface BrandsItems {
-img: string
+  img: string;
 }
