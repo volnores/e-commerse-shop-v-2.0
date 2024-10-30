@@ -1,17 +1,16 @@
-import React from 'react'
-import { Outlet } from 'react-router-dom'
-import NavBar from '../components/header/NavBar'
-
+import React from 'react';
+import { Outlet } from 'react-router-dom';
+import NavBar from '../components/header/NavBar';
 
 const index: React.FC = () => {
   return (
     <div>
-      <NavBar/>
+      <NavBar />
       <main>
-      <Outlet/>
+        <Outlet />
       </main>
-      </div>
-  )
-}
+    </div>
+  );
+};
 
-export default index
+export default index;

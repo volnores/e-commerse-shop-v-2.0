@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react';
 
-import moon from "../../../../public/images/headerImages/moon.png";
+import moon from '../../../../public/images/headerImages/moon.png';
 // import sun from "../../../../public/images/headerImages/sun.png";
 
 const Theme: React.FC = () => {

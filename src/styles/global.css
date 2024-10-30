@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arima:wght@100..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 @layer base {
   :root {
-    --font-family: "Arima", sans-serif;
+    --font-family: 'Arima', sans-serif;
     --primary-color: #992d2d;
     --secondary-color: #4e1d6e;
 
@@ -17,7 +17,7 @@
   }
 
   .dark {
-    --font-family: "Arima", sans-serif;
+    --font-family: 'Arima', sans-serif;
     --primary-color: #992d2d;
     --secondary-color: #4e1d6e;
 

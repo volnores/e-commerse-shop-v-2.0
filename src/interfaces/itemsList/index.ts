@@ -1,5 +1,5 @@
 export interface ItemsList {
-    data: string[],
-    error: string,
-    isLoading: boolean
+  data: string[];
+  error: string;
+  isLoading: boolean;
 }

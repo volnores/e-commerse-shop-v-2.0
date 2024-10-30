@@ -1,27 +1,21 @@
-import {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
-  Autoplay,
-} from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper/modules';
+import { Swiper, SwiperSlide } from 'swiper/react';
 
-import img1 from "../../../../public/images/carousel/img1.jpg";
-import img2 from "../../../../public/images/carousel/img2.png";
-import img3 from "../../../../public/images/carousel/img3.jpg";
-import img4 from "../../../../public/images/carousel/img4.jpg";
+import img1 from '../../../../public/images/carousel/img1.jpg';
+import img2 from '../../../../public/images/carousel/img2.png';
+import img3 from '../../../../public/images/carousel/img3.jpg';
+import img4 from '../../../../public/images/carousel/img4.jpg';
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
-import "swiper/css/scrollbar";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const index: React.FC = () => {
   return (
     <div>
       <Swiper
-        style={{ height: "800px" }}
+        style={{ height: '800px' }}
         className="flex items-center md:mt-6 w-full xl:max-w-[1750px] mx-auto"
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         autoplay={true}
@@ -29,8 +23,7 @@ const index: React.FC = () => {
         slidesPerView={1}
         navigation
         pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-      >
+        scrollbar={{ draggable: true }}>
         <SwiperSlide>
           <img src={img1} alt="img1" />
         </SwiperSlide>
