@@ -43,7 +43,7 @@ const index: React.FC = () => {
       </ul>
       <div className="flex justify-start md: mt-8 w-full max-w-[1750px] mx-auto rounded-sm gap-16">
         <div className="border-1 p-16 rounded-sm bg-gray-50">
-          <img src={data?.product.image} alt="img" className="h-96  rounded-sm gap-6" />
+          <img src={data?.product.image} alt="img" className="w-96  rounded-sm gap-6" />
         </div>
         <div className="grid grid-rows-8 gap-4">
           <h1 className="text-3xl font-semibold">{data?.product.model}</h1>
