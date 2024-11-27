@@ -5,29 +5,29 @@ import loyalty from '../../../../public/images/advantagesImages/loyalty.jpg';
 import pay from '../../../../public/images/advantagesImages/pay.jpg';
 import support from '../../../../public/images/advantagesImages/support.jpg';
 
-const index: React.FC = () => {
+const Index: React.FC = () => {
   return (
-    <div>
-      <ul className="flex justify-between px-16 md: mt-4 w-full xl: max-w-[1750px] mx-auto">
-        <li className="flex flex-col justify-center items-center">
-          <img src={delivery} alt="delivery" className="h-48" />
-          <h1 className="text-md font-bold">Express delivery</h1>
+    <div className="py-4">
+      <ul className="flex flex-col md:flex-row justify-between px-4 md:px-16 w-full xl:max-w-[1750px] mx-auto">
+        <li className="flex flex-col justify-center items-center mb-4 md:mb-0">
+          <img src={delivery} alt="delivery" className="h-32 md:h-48" />
+          <h1 className="text-sm md:text-md font-bold text-center">Express delivery</h1>
         </li>
-        <li className="flex flex-col justify-center items-center">
-          <img src={pay} alt="pay" className="h-48" />
-          <h1 className="text-md font-bold">Payment on the spot</h1>
+        <li className="flex flex-col justify-center items-center mb-4 md:mb-0">
+          <img src={pay} alt="pay" className="h-32 md:h-48" />
+          <h1 className="text-sm md:text-md font-bold text-center">Payment on the spot</h1>
         </li>
-        <li className="flex flex-col justify-center items-center">
-          <img src={support} alt="support" className="h-48" />
-          <h1 className="text-md font-bold">24/7 Support</h1>
+        <li className="flex flex-col justify-center items-center mb-4 md:mb-0">
+          <img src={support} alt="support" className="h-32 md:h-48" />
+          <h1 className="text-sm md:text-md font-bold text-center">24/7 Support</h1>
         </li>
-        <li className="flex flex-col justify-center items-center">
-          <img src={loyalty} alt="loyalty" className="h-48" />
-          <h1 className="text-md font-bold">Loyalty program</h1>
+        <li className="flex flex-col justify-center items-center mb-4 md:mb-0">
+          <img src={loyalty} alt="loyalty" className="h-32 md:h-48" />
+          <h1 className="text-sm md:text-md font-bold text-center">Loyalty program</h1>
         </li>
       </ul>
     </div>
   );
 };
 
-export default index;
+export default Index;

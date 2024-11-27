@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { useGetProductsIdPageQuery } from '../../../API/getProducts';
-import { ItemsList } from '../../../interfaces/itemsList';
+
 import { RightOutlined } from '@ant-design/icons';
 import Footer from '../../footer/Footer/index';
 import Loader from '../../loader/Loader/index';
@@ -19,15 +19,18 @@ const index: React.FC = () => {
     navigate('/cart');
   };
 
-  const { data, error, isLoading } = useGetProductsIdPageQuery<ItemsList>(id);
+  const { data, error, isLoading } = useGetProductsIdPageQuery(id);
 
   if (isLoading) return <Loader />;
-  if (error) return <h1>{error}</h1>;
-
+  if (error) {
+    if ('status' in error && 'data' in error) {
+      return <h1>{`Ошибка ${error.status}: ${JSON.stringify(error.data)}`}</h1>;
+    }
+  }
   return (
     <div>
       <ul className="flex justify-start md: mt-8 w-full max-w-[1750px] mx-auto rounded-sm gap-2 text-xl ">
-        <li className="flex items-center gap-1 ">
+        <li className="flex ml-4 items-center gap-1 ">
           <div onClick={() => navigate('/')} className="cursor-pointer hover:text-blue-600">
             Home
           </div>

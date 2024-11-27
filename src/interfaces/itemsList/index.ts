@@ -1,5 +1,7 @@
+import { ProductItem } from '../productItem';
+
 export interface ItemsList {
-  data: string[];
-  error: string;
+  products: ProductItem[];
+  error?: string;
   isLoading: boolean;
 }

@@ -7,7 +7,7 @@ import img3 from '../../../../public/images/carousel/img3.jpg';
 import img4 from '../../../../public/images/carousel/img4.jpg';
 
 import 'swiper/css';
-import 'swiper/css/navigation';
+
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
@@ -15,13 +15,12 @@ const index: React.FC = () => {
   return (
     <div>
       <Swiper
-        style={{ height: '800px' }}
-        className="flex items-center md:mt-6 w-full xl:max-w-[1750px] mx-auto"
+        style={{ height: '600px' }}
+        className="flex items-center md:mt-6 w-full xl:max-w-[1300px] mx-auto"
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         autoplay={true}
         spaceBetween={50}
         slidesPerView={1}
-        navigation
         pagination={{ clickable: true }}
         scrollbar={{ draggable: true }}>
         <SwiperSlide>

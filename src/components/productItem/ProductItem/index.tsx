@@ -20,7 +20,7 @@ const index = ({ ...item }: ProductItem) => {
       <img
         src={image}
         alt="img"
-        className="h-64 w-64 rounded-sm gap-6 mt-4 cursor-pointer"
+        className="min-h-24 min-w-24 rounded-sm gap-6 mt-4 cursor-pointer"
         onClick={() => nav(item)}
       />
 
@@ -31,7 +31,7 @@ const index = ({ ...item }: ProductItem) => {
         className={
           discount > 11
             ? 'absolute top-8 left-6 px-1 py-1 bg-blue-200 flex items-center min-w-14 justify-center rounded-full'
-            : null
+            : undefined
         }>
         {discount > 11 && `-${discount}%`}
       </div>
