@@ -11,7 +11,7 @@ const Categories: React.FC = () => {
   const navigate = useNavigate();
 
   return (
-    <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 w-full xl:max-w-[1300px] mx-auto mt-4">
+    <ul className="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-4 w-full xl:max-w-[1300px] mx-auto mt-4 bg-white text-black dark:bg-gray-800 dark:text-white">
       <li className="bg-blue-200 col-span-2 md:col-span-1 min-h-[100px] px-4 py-6 rounded-sm cursor-pointer">
         <div
           className="flex items-center justify-center gap-4 hover:scale-105 transition-transform"

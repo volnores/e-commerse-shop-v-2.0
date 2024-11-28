@@ -16,15 +16,15 @@ const index = ({ ...item }: ProductItem) => {
   };
 
   return (
-    <div className="border-2 px-4 py-2 rounded-sm bg-gray-50 relative ">
+    <div className="border-2 px-4 py-2 rounded-sm  relative bg-white text-black dark:bg-gray-800 dark:text-white">
       <img
         src={image}
         alt="img"
-        className="min-h-24 min-w-24 rounded-sm gap-6 mt-4 cursor-pointer"
+        className="min-h-64 h-64 min-w-24 rounded-sm gap-6 mt-4 cursor-pointer"
         onClick={() => nav(item)}
       />
 
-      <div className="absolute right-6 top-8 p-2 rounded-full bg-slate-100 hover:bg-slate-200 flex cursor-pointer">
+      <div className="absolute right-6 top-8 p-2 rounded-full bg-slate-100 hover:bg-slate-200 flex cursor-pointer ">
         {<SearchOutlined />}
       </div>
       <div

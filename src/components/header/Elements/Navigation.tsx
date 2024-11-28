@@ -28,9 +28,7 @@ const Navigation: React.FC = () => {
         </button>
       </li>
       <li>
-        <button className="text-md" onClick={() => navigate('/about')}>
-          About Us
-        </button>
+        <button className="text-md">About Us</button>
       </li>
       <li>
         <button className="text-md">Help</button>

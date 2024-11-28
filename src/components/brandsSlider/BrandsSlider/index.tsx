@@ -21,7 +21,7 @@ const index: React.FC = () => {
   };
 
   return (
-    <div className="relative flex items-center mt-8">
+    <div className="relative flex items-center mt-8 bg-white text-black dark:bg-gray-800 dark:text-white">
       <button
         onClick={RightScroll}
         className="absolute flex rounded-full left-14 max-w-[1300] px-4 py-4 bg-blue-100 hover:bg-indigo-200 bg-opacity-80 ">

@@ -13,10 +13,10 @@ import 'swiper/css/scrollbar';
 
 const index: React.FC = () => {
   return (
-    <div>
+    <div className="bg-white text-black dark:bg-gray-800 dark:text-white">
       <Swiper
         style={{ height: '600px' }}
-        className="flex items-center md:mt-6 w-full xl:max-w-[1300px] mx-auto"
+        className="flex items-center md:mt-6 w-full xl:max-w-[1300px] mx-auto "
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         autoplay={true}
         spaceBetween={50}

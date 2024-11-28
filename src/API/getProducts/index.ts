@@ -1,11 +1,11 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
-import { ItemsList } from '../../interfaces/itemsList';
+import { ProductItem } from '../../interfaces/productItem';
 
 export const productsApi = createApi({
   reducerPath: 'productsApi',
   baseQuery: fetchBaseQuery({ baseUrl: 'https://fakestoreapi.in/api/' }),
   endpoints: (builder) => ({
-    getProducts: builder.query<ItemsList, null>({
+    getProducts: builder.query<ProductItem[], void>({
       query: () => {
         return {
           url: `products`,
@@ -15,10 +15,10 @@ export const productsApi = createApi({
         };
       },
     }),
-    getProductsIdPage: builder.query({
+    getProductsIdPage: builder.query<ProductItem, number>({
       query: (id) => ({ url: `products/${id}` }),
     }),
-    getAllProducts: builder.query({
+    getAllProducts: builder.query<ProductItem[], void>({
       query: () => ({ url: 'products' }),
     }),
   }),

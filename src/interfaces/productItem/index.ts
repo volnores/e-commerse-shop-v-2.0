@@ -8,6 +8,7 @@ export interface ProductItem {
   color: string;
   id: number;
   model: string;
+  quantity?: number;
   popular: string;
   discount: number;
 }

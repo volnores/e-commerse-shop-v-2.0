@@ -7,8 +7,8 @@ const NavBar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-base">
-      <div className="flex justify-between w-full px-4 py-2 border-b-2 max-w-[1300px] mx-auto">
+    <nav className="bg-white text-black dark:bg-gray-800 dark:text-white">
+      <div className="flex justify-between w-full px-4 py-2 border-b-2 max-w-[1300px] mx-auto ">
         <Logo />
 
         <button className="md:hidden p-2" onClick={() => setIsMenuOpen((prev) => !prev)}>

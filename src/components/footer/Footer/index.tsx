@@ -9,7 +9,7 @@ import React from 'react';
 
 const Index: React.FC = () => {
   return (
-    <div className="flex mt-8 flex-col md:flex-row justify-between bg-blue-400 bg-opacity-40 p-4 md:p-8 max-w-[1300px] mx-auto">
+    <div className="flex mt-8 flex-col md:flex-row justify-between bg-blue-400 bg-opacity-40 p-4 md:p-8 max-w-[1300px] mx-auto  text-black dark:bg-gray-800 dark:text-white">
       <div className="flex flex-col w-full">
         <div className="text-xl md:text-2xl font-bold">Join us on social networks</div>
         <ul className="flex mt-2 gap-2 md:gap-4">

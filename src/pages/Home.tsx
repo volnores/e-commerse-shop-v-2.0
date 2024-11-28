@@ -8,7 +8,7 @@ import ItemsList from '../components/itemsList/ItemsList/index';
 
 const Home: React.FC = () => {
   return (
-    <div>
+    <div className="relative bg-white text-black dark:bg-gray-800 dark:text-white">
       <Carousel />
       <Advantages />
       <GridCategories />
